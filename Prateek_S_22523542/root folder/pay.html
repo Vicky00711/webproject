@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prateek's Library</title>
+    <link rel="icon" type="image/x-icon" href="images/book.png">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="javascript/script.js"></script>
+</head>
+
+<body>
+    <div id="navigation">
+
+        <div id="logo">
+            <img src="images/library.jpeg" alt="logo of library" id="library">
+        </div>
+        <div id="heading">
+            <p>My Bookshop</p>
+        </div>
+    </div>
+    <div id="nav" class="nav">
+        <div id="ul1" class="ul1">
+            <ul>
+                <li class="navBar1"><a id="home1" href="index.html">Home</a></li>
+                <li class="navBar1"><a id="about2" href="#">About US</a></li>
+                <li class="navBar1"><a href="#">Contact US</a></li>
+
+            </ul>
+
+        </div>
+        <div id="hamburger" onclick="onclickMenu();">
+            <div class="line">☰</div>
+
+        </div>
+    </div>
+    <div id=paymentOption>
+        <h1>Payment Options</h1>
+    </div>
+    <hr>
+    <div id="details">
+        <p>Debit/Credit Card:</p>
+        <div id="cardLogo"><img id="masterImg" src="images/mastercard.png" alt="Picture of mastercard"></div>
+    </div>
+
+    <form action="#">
+        <div id="formPart">
+            <div id="cardNumberInput">
+                <!-- Section to input 16 digit card number -->
+                <label>Card Number: <input type="text" name="mycard" id="cardNumber" required
+                        placeholder="Enter 16 digit card number"><br></label>
+
+            </div>
+            <!-- Selecting expiry month -->
+            <label>Expiry Month: <select id="exMonth" title="select a month">
+                    <option value="0">Enter month</option>
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select></label>
+
+            <!-- Selecting expiry year -->
+            <label> Year:<select id="exYear" title="select a year">
+                    <option value="0">Enter year</option>
+
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                </select><br></label>
+            <!-- Entering 3-4 digit card CVV -->
+            <label>CVV: <input type="text" name="myCVV" id="myCvv" required
+                    placeholder="3 digit or 4 digit CVV"></label>
+
+            <button type="submit" id="submit1" style="cursor: pointer;">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prateek's Library</title>
+    <link rel="icon" type="image/x-icon" href="images/book.png">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="javascript/script.js"></script>
+
+</head>
+
+<body>
+    <!-- Section includes the logo, image of a library abd heading of the library -->
+    <div id="navigation">
+
+        <div id="logo">
+            <img src="images/library.jpeg" alt="Picture of library" id="library">
+        </div>
+        <div id="heading">
+            <p>My Bookshop</p>
+        </div>
+    </div>
+    <!-- Section for navigation menu bar -->
+    <div id="nav" class="nav">
+        <div id="ul1" class="ul1">
+            <ul>
+                <li class="navBar1"><a id="home1" href="index.html">Home</a></li>
+                <li class="navBar1"><a id="about2" href="#">About US</a></li>
+                <li class="navBar1"><a href="#">Contact US</a></li>
+
+            </ul>
+
+        </div>
+        <!-- This is basically my hamburger menu only visible in the smartphone view and also have a onclick function for displaying the menu-->
+        <div id="hamburger" onclick="onclickMenu();">
+            <div class="line">☰</div>
+
+        </div>
+    </div>
+    <!-- Sections of books created using css grid -->
+    <div class="booksec">
+        <div class="box">
+            <!-- Holds the image of the book -->
+            <div class="part1">
+                <img src="images/sherlok.jpeg" alt="Picture of Sherlock Holmes Book" class="image">
+            </div>
+            <!-- Holds the information of the book and pay button  -->
+            <div class="part2">
+                <div class="part3">
+                    <p>Sherlock Holmes is one of the most beloved fictional detectives of all time. Created by Sir
+                        Arthur Conan Doyle, he first appeared in "A Study in Scarlet" and went on to solve countless
+                        mysteries throughout his career. With his sharp intellect, incredible powers of deduction, and
+                        unique personality, Sherlock Holmes has become an icon of detective fiction and a cultural
+                        touchstone. His adventures continue to captivate readers and inspire new generations of
+                        detective stories.</p>
+                </div>
+                <div class="part3">
+                    <hr>
+                    <!-- Clicking takes you to the pay page -->
+                    <button type="submit" class="btn" onclick="location.href='pay.html';">
+                        PAY</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <!-- Holds the image of the book -->
+            <div class="part1">
+                <img src="images/harry.jpeg" alt="Picture of Sherlock Holmes Book" class="image">
+            </div>
+            <div class="part2">
+                <div class="part3">
+                    <p>"Harry Potter and the Chamber of Secrets" is the second book in J.K. Rowling's Harry Potter
+                        series. In this book, Harry returns to Hogwarts School of Witchcraft and Wizardry for his second
+                        year, where he discovers a mysterious chamber containing a dangerous creature. Along with his
+                        friends Ron and Hermione, Harry must solve the mystery and save Hogwarts from the threat lurking
+                        within the chamber. The book is full of adventure, magic, and suspense, making it a must-read
+                        for fans of the series.</p>
+                </div>
+                <div class="part3">
+                    <hr>
+                    <!-- Holds the information of the book and pay button  -->
+                    <button type="submit" class="btn" onclick="location.href='pay.html';">
+                        PAY</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="part1">
+                <!-- Holds the image of the book -->
+                <img src="images/gullivers.jpeg" alt="Picture of gullivers travels Book" class="image">
+            </div>
+            <div class="part2">
+                <div class="part3">
+                    <p>"Gulliver's Travels" is a novel by Jonathan Swift, first published in 1726. It is a satirical
+                        work that follows the journey of Lemuel Gulliver, a ship's surgeon who visits four imaginary
+                        lands. In each land, Gulliver encounters strange and fantastical creatures, and his experiences
+                        lead him to question many aspects of human society. "Gulliver's Travels" is a classic work of
+                        satire that continues to be widely read and studied today.</p>
+                </div>
+
+                <div class="part3">
+                    <hr>
+                    <!-- Holds the information of the book and pay button  -->
+                    <button type="submit" class="btn" onclick="location.href='pay.html';">
+                        PAY</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <!-- Holds the image of the book -->
+            <div class="part1">
+                <img src="images/three.jpeg" alt="Picture of Sherlock Holmes Book" class="image">
+            </div>
+            <div class="part2">
+                <div class="part3">
+                    <p>"Three Men in a Boat" is a humorous travelogue written by Jerome K. Jerome. The book tells the
+                        story of three friends, Jerome, George, and Harris, who embark on a boating holiday on the River
+                        Thames. Throughout the journey, they encounter various mishaps and comic situations. The book is
+                        a classic of British humor, celebrated for its witty observations, amusing anecdotes, and
+                        timeless humor. It is a must-read for anyone who enjoys lighthearted and entertaining
+                        literature.</p>
+                </div>
+                <div class="part3">
+                    <hr>
+                    <!-- Holds the information of the book and pay button  -->
+                    <button type="submit" class="btn" onclick="location.href='pay.html';">
+                        PAY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

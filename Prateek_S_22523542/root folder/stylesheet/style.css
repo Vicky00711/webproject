@@ -1,0 +1,795 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+#navigation {
+    display: grid;
+    background: url(../images/lin.jpeg);
+    background-size: 100% 100%;
+    /* setting max height and height to 100% */
+    height: 200px;
+    border: 1px solid;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 34;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#logo {
+    /* Setting the position of image to its relative position */
+    position: relative;
+    top: 16%;
+    height: 50px;
+    display: inline-block;
+    width: 76%;
+    margin-left: 10%;
+    /* setting the z index higher than background image to make the logo visible */
+    z-index: 50;
+
+
+}
+
+#heading {
+
+    margin-top: 77px;
+
+    height: 50px;
+    display: inline-block;
+
+
+}
+
+#heading p {
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 67px;
+    font-weight: bold;
+    color: #f4edee;
+
+
+}
+
+#library {
+
+
+
+    height: 152px;
+    object-fit: contain;
+
+
+
+}
+
+ul {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style-type: none;
+    border: 2px solid black;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+
+
+}
+
+li:hover {
+    background-color: antiquewhite;
+
+
+
+}
+
+a {
+    text-decoration: none;
+    padding: 50px;
+    font-size: 1.2rem;
+
+
+}
+
+
+#nav {
+
+    display: inline-block;
+
+    margin-left: 650px;
+    margin-top: 50px;
+}
+
+.booksec {
+
+    height: 900px;
+    width: 95vw;
+    margin-left: 2%;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* designing the booksection with css grid */
+    display: grid;
+    /* Dividing the section with 1 fraction each  to make two equal columns*/
+    grid-template-columns: 1fr 1fr;
+    /* Dividing the section with 1 fraction each  to make two equal rows*/
+    grid-template-rows: 1fr 1fr;
+    row-gap: 2%;
+    column-gap: 2%;
+}
+
+.box {
+
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+
+
+.part2 {
+
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    margin: 5%;
+
+}
+
+.image {
+    margin-top: 10%;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.part3 a {
+    padding-left: 30%;
+}
+
+
+
+.part3 p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    font-size: 1.3em;
+    margin-left: 35%;
+    margin-top: 10%;
+    height: 30%;
+    width: 50%;
+    cursor: pointer;
+}
+
+
+
+
+#hamburger {
+    visibility: hidden;
+    display: inline-block;
+    font-size: 67px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(233, 159, 62);
+}
+
+#paymentOption {
+    margin-top: 5%;
+    margin-left: 5%;
+
+}
+
+form {
+    box-shadow: 2px 7px;
+    display: inline-block;
+    border: 2px solid;
+    background-color: #eadcb5;
+    width: 50vw;
+    margin-top: 9%;
+    margin-bottom: 4%;
+    margin-left: 29%;
+    height: 28vh;
+
+}
+
+#formPart {
+    padding: 14px;
+    flex-direction: column;
+    display: flex;
+
+    margin-left: auto;
+    margin-top: 2%;
+
+    flex-wrap: wrap;
+}
+
+#cardNumber {
+    width: -webkit-fill-available;
+
+}
+
+#details {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+}
+
+#details p {
+    margin-left: 17px;
+    margin-top: 47px;
+    font-size: 1.2em;
+}
+
+#cardLogo {
+    width: 200px;
+    height: 100px;
+    margin-left: 1%;
+}
+
+#masterImg {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: -2%;
+}
+
+#display {
+    font-size: 1.2em;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+label {
+    margin-top: 3%;
+}
+
+#submit1 {
+    margin-top: 1.5%;
+}
+
+
+
+
+@media screen and (min-width:886px) and (max-width:1240px) {
+
+    #logo {
+        position: relative;
+        top: 16%;
+        height: 50px;
+        display: inline-block;
+        width: 76%;
+        margin-left: 10%;
+        z-index: 50;
+
+
+    }
+
+    ul {
+        margin-right: 63%;
+    }
+
+    li {
+        margin-top: 4%;
+    }
+
+    a {
+        margin: 20px;
+        padding: 4px;
+        white-space: nowrap;
+    }
+
+    .booksec {
+
+        height: 98vh;
+        width: 95vw;
+        margin-left: 2%;
+
+        margin-top: 50px;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 2%;
+        column-gap: 2%;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .part3 a {
+        padding-left: 7%;
+    }
+}
+
+@media screen and (max-width: 886px) and (min-width:727px) {
+
+
+    #logo {
+        position: relative;
+        top: 16%;
+        height: 50px;
+        display: inline-block;
+        width: 76%;
+        margin-left: 10%;
+        z-index: 50;
+
+
+    }
+
+    #nav {
+
+        display: contents;
+        /* setting the size of the nav equla to the complte width of the screen */
+        width: 100vw;
+    }
+
+
+    #heading {
+        margin-top: 77px;
+
+
+    }
+
+    #heading p {
+        font-size: 340%;
+    }
+
+    .ul1 {
+        display: none;
+
+    }
+
+    ul a {
+
+        color: #070808;
+
+        cursor: pointer;
+    }
+
+    .booksec {
+        height: 98vh;
+        width: 95vw;
+        margin-left: 2%;
+        margin-top: 50px;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 2%;
+        column-gap: 2%;
+    }
+
+    #hamburger {
+
+        cursor: pointer;
+        visibility: visible;
+
+    }
+
+    li {
+
+        margin-bottom: 5%;
+        margin-top: 4%;
+
+
+        border: 0;
+
+        margin-left: 31%;
+        display: inline-table;
+
+    }
+
+    /* Designing the menu bar when the hamburger is clicked */
+    .ul2 {
+
+        display: inline-table;
+        position: relative;
+
+        top: 41px;
+        height: 38vh;
+        width: 100vw;
+        background-color: #e4b44b;
+        margin-left: 0px;
+        opacity: 0.5;
+    }
+
+    .nav2 {
+
+        display: inline-block;
+        width: 100vw;
+    }
+
+    ul {
+        margin-right: 10%;
+    }
+
+    #paymentOption {
+        margin-top: 10%;
+        margin-left: 5%;
+
+    }
+
+
+}
+
+@media screen and (max-width: 726px) and (min-width:505px) {
+    #logo {
+        width: 76%;
+        margin-top: 30px;
+    }
+
+    #nav {
+
+        display: contents;
+
+    }
+
+    #library {
+
+        height: 191%;
+    }
+
+    #heading {
+        margin-top: 77px;
+        font-size: 20px;
+    }
+
+    #heading p {
+        font-size: 2.2em;
+    }
+
+    .ul1 {
+        display: none;
+
+    }
+
+    ul a {
+
+        color: #070808;
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    .booksec {
+        height: 98vh;
+        width: 95vw;
+        margin-left: 2%;
+        margin-top: 50px;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 2%;
+        column-gap: 2%;
+    }
+
+    #hamburger {
+
+        cursor: pointer;
+        visibility: visible;
+
+    }
+
+    li {
+
+        display: block;
+
+        margin-top: 53px;
+        border: 0;
+        margin-left: 59%;
+
+    }
+
+    .ul2 {
+
+
+
+
+
+        display: inline-table;
+        position: relative;
+
+        top: 41px;
+        height: 44vh;
+        width: 100vw;
+        background-color: #e4b44b;
+        margin-left: 0px;
+        opacity: 0.5;
+
+    }
+
+    .nav2 {
+
+        display: inline-block;
+        width: 100vw;
+    }
+
+    ul {
+        width: 60%;
+        margin-right: 10%;
+    }
+
+    #heading p {
+        font-size: 194%;
+    }
+
+    #paymentOption {
+        margin-top: 17%;
+        margin-left: 5%;
+
+    }
+
+}
+
+@media screen and (max-width:505px) and (min-width:307px) {
+    #logo {
+        width: 76%;
+        margin-top: 30px;
+    }
+
+    #nav {
+
+        display: contents;
+
+    }
+
+    #library {
+
+        max-width: 118%;
+
+        max-height: 200%;
+    }
+
+    #heading {
+        margin-left: 6%;
+        margin-top: 77px;
+        font-size: 20px;
+    }
+
+    #heading p {
+        font-size: 1.7em;
+    }
+
+    .ul1 {
+        display: none;
+
+    }
+
+    ul a {
+
+        display: block;
+        width: 90px;
+        color: #070808;
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    .booksec {
+        height: 98vh;
+        width: 95vw;
+        margin-left: 2%;
+        margin-top: 50px;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 2%;
+        column-gap: 2%;
+    }
+
+    #hamburger {
+
+        cursor: pointer;
+        visibility: visible;
+
+    }
+
+    li {
+
+        display: block;
+        justify-content: center;
+        margin-top: 53px;
+
+
+        border: 0;
+
+        margin-left: 59%;
+
+
+    }
+
+    .ul2 {
+
+
+
+
+
+        display: inline-table;
+        position: relative;
+
+        top: 41px;
+        height: 44vh;
+        width: 100vw;
+        background-color: #e4b44b;
+        margin-left: 0px;
+        opacity: 0.5;
+
+    }
+
+    .nav2 {
+
+        display: inline-block;
+        width: 100vw;
+    }
+
+    ul {
+        width: 60%;
+        margin-right: 10%;
+    }
+
+    #home1 {
+        width: 53px;
+    }
+
+    #about2 {
+        width: 82px;
+    }
+
+    form {
+        height: 20%;
+        width: 67vw;
+        margin-left: 18%;
+        margin-bottom: 4%;
+    }
+
+    #formPart {
+        margin-left: -3%;
+    }
+
+    #paymentOption {
+        margin-top: 20%;
+        margin-left: 5%;
+
+    }
+}
+
+@media screen and (max-width:307px) {
+    #logo {
+        width: 76%;
+        margin-top: 30px;
+    }
+
+    #nav {
+
+        display: contents;
+
+    }
+
+    #library {
+
+        max-width: 118%;
+
+        max-height: 200%;
+    }
+
+    #heading {
+        margin-left: 6%;
+        margin-top: 77px;
+        font-size: 20px;
+    }
+
+    #heading p {
+        font-size: 1.3em;
+    }
+
+    .ul1 {
+        display: none;
+
+    }
+
+    ul a {
+
+        display: block;
+        width: 90px;
+        color: #070808;
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    .booksec {
+        height: 98vh;
+        width: 95vw;
+        margin-left: 2%;
+        margin-top: 50px;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 2%;
+        column-gap: 2%;
+    }
+
+    #hamburger {
+
+        cursor: pointer;
+        visibility: visible;
+
+    }
+
+    li {
+
+        display: block;
+        justify-content: center;
+        margin-top: 53px;
+
+
+        border: 0;
+
+        margin-left: 59%;
+
+
+    }
+
+    .ul2 {
+
+
+
+
+
+        display: inline-table;
+        position: relative;
+
+        top: 41px;
+        height: 44vh;
+        width: 100vw;
+        background-color: #e4b44b;
+        margin-left: 0px;
+        opacity: 0.5;
+
+    }
+
+    .nav2 {
+
+        display: inline-block;
+        width: 100vw;
+    }
+
+    ul {
+        width: 60%;
+        margin-right: 10%;
+    }
+
+    #home1 {
+        width: 53px;
+    }
+
+    #about2 {
+        width: 82px;
+    }
+
+    form {
+        height: 20%;
+        width: 67vw;
+        margin-left: 18%;
+        margin-bottom: 4%;
+    }
+
+    #formPart {
+        margin-left: -3%;
+    }
+
+    #paymentOption {
+        margin-top: 20%;
+        margin-left: 5%;
+
+    }
+}
